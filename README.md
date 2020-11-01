@@ -1,6 +1,6 @@
 # aLRP Loss: A Ranking-based, Balanced Loss Function Unifying Classification and Localisation in Object Detection 
 
-Official PyTorch implementation of aLRP Loss.
+This repository presents a different implementation of aLRP Loss based on [official AP Loss repository](https://github.com/cccorn/AP-loss). The ablation experiments (Table 2 in the paper) are conducted following this repository for a fair comparison with AP Loss. Please see [official AP Loss repository](https://github.com/kemaloksuz/aLRPLoss) for the official implementation.
 
 > [**aLRP Loss: A Ranking-based, Balanced Loss Function Unifying Classification and Localisation in Object Detection**](https://arxiv.org/abs/2009.13592),            
 > [Kemal Oksuz](https://kemaloksuz.github.io/), Baris Can Cam, [Emre Akbas](http://user.ceng.metu.edu.tr/~emre/), [Sinan Kalkan](http://www.kovan.ceng.metu.edu.tr/~sinan/),
@@ -27,7 +27,7 @@ Please cite the paper if you benefit from our paper or repository:
        year = {2020}
 }
 ```
-## Results of the Base Models (with Scale 500)
+## Ablation Experiments (from Table 2 in the paper)
 
 |    Method     |  Backbone   | oLRP (minival) | AP (minival) | Download  |
 | :-------------: | :-----: | :------------: | :------------: | :-------: |
@@ -35,7 +35,9 @@ Please cite the paper if you benefit from our paper or repository:
 |    aLRP Loss  | ResNet-50 |   68.4  |   38.9   | [model](https://drive.google.com/file/d/1I7_T4zwvc-ncMlMWNbqRZ2TgzstU7svs/view?usp=sharing)|
 |    aLRP Loss + ATSS   | ResNet-50 |   67.3   |   40.2  | [model](https://drive.google.com/file/d/1oRquKgfsYPUA3OZYpL6Hn2Yw0VQm9_Mg/view?usp=sharing)|
 
-## Table of Main Results with Pretrained Models
+## Other Pretrained Models
+
+Following are the models with stronger backbones that we trained with this repository:
 
 |    Backbone     |  Scale   | oLRP (minival) | AP (minival) | AP (test-dev) | Download  |
 | :-------------: | :-----: | :------------: | :------------: | :----: | :-------: |
